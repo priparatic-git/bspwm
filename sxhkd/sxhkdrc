@@ -14,6 +14,10 @@ super + r
 super + Escape
 	pkill -USR1 -x sxhkd
 
+# toggle polybar
+super + shift + p
+    bash ~/.config/polybar/toggle-polybar
+
 #
 # bspwm hotkeys
 #
@@ -120,13 +124,12 @@ super + alt + shift + {h,j,k,l}
 super + {Left,Down,Up,Right}
 	bspc node -v {-20 0,0 20,0 -20,20 0}
 
-super + shift + {o,f,d,s,p,n,g}
+super + shift + {o,f,d,s,n,g}
     {\
     obsidian, \
     firefox, \
     discord, \
     spotify-launcher, \
-    flameshot gui, \
     pcmanfm, \
     steam, \
     }
